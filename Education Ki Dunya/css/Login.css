@@ -1,0 +1,60 @@
+﻿#loginMain {
+    width: 100%;
+    height: 80vh;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginDiv {
+    width: 500px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#loginComponent {
+    background-color: white;
+    width: 90%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+    #loginComponent * {
+        margin: 5px;
+        margin-left: 10px;
+    }
+
+    #loginComponent input {
+        width: 94%;
+        height: 30px;
+        font-size: 20px;
+        padding-left: 5px
+    }
+
+.btnSubmit {
+    font-size: 30px !important;
+    width: 100px !important;
+    height: auto !important;
+    color: white !important;
+    background-color: black !important;
+    padding: 4px !important;
+}
+
+@media only screen and (max-width: 480px) {
+    #loginDiv {
+        width: 100%;
+    }
+}

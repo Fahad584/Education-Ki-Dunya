@@ -1,0 +1,306 @@
+#topGrid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 20% 20% 20% 40%;
+  gap: 10px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  position: relative;
+}
+
+#gridImage {
+  width: 100%;
+  height: 220px;
+}
+
+#grid4 {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.gridBtn {
+  width: 43px;
+  height: 43px;
+  margin-top: 80px;
+  border-radius: 50%;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.gridBtn:hover {
+  background-color: yellow;
+}
+
+#gridbtn1 {
+  position: absolute;
+  left: 0;
+}
+
+#gridbtn2 {
+  position: absolute;
+  right: 0;
+}
+
+#gridSecond {
+  margin-top: 10px;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 25% 25% 51%;
+  gap: 10px;
+}
+
+#grids {
+  display: flex;
+  flex-direction: column;
+}
+
+.gridSecond {
+  background-color: #eee;
+  width: 100%;
+  height: 300px;
+}
+
+.gridSecond > img {
+  width: inherit;
+  height: inherit;
+}
+
+#gridSecond3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.gridSecond3div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gridSecond3div img {
+  width: 100px;
+  height: 100px;
+}
+
+#gridThird {
+  margin-top: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "a b";
+  grid-template-rows: 100%;
+  gap: 10px;
+  grid-template-columns: 25% 77%;
+}
+
+#ads {
+  width: 100%;
+  grid-area: a;
+  display: flex;
+  flex-direction: column;
+}
+
+#ad1 {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 5px;
+}
+
+#ad2 {
+  height: 50%;
+  width: 100%;
+  margin-top: 5px;
+}
+
+#content {
+  grid-area: b;
+  display: flex;
+  flex-direction: column;
+}
+
+#books, .gridContent{
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+#poet{
+  margin-top: 10px;
+}
+
+#bookDiv, .gridDivContent {
+  
+  margin-left: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(1, 200px);
+  /* justify-content: space-around; */
+}
+
+#bookDiv img, .gridDivContent img{
+  width: 100px;
+  height: 150px;
+  
+}
+
+#poet img{
+  border-radius: 50%;
+  
+}
+
+#bookDiv div, .gridDivContent div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#books h1{
+  margin: 10px;
+}
+
+.gridContent h1{
+  margin: 10px;
+}
+
+#bottom{
+  display: flex;
+  /* margin-top: 10px; */
+  /* background-color: lightsalmon; */
+  padding-top: 10px;
+}
+
+.bottomClass{
+
+  width: 100%;
+  background-color: #eee;
+  border-radius: 10px;
+  margin: 5px;
+  justify-content: center;
+  /* align-items: flex-start; */
+}
+
+.bottomClass h1{
+  margin: 10px;
+}
+
+.bottomClassDiv{
+  
+  font-size: 20px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 5px;
+}
+
+.bottomClassDiv p{
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  #topGrid {
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 31.5% 31.5% 31%;
+    grid-template-areas:
+      "a b c"
+      "d d d";
+    /* grid-template-rows: 50% 50%;
+        grid-template-columns: 33% 33% 33%; */
+  }
+
+  #grid1 {
+    grid-area: a;
+  }
+
+  #grid2 {
+    grid-area: b;
+  }
+
+  #grid3 {
+    grid-area: c;
+  }
+
+  #grid4 {
+    grid-area: d;
+  }
+
+  #gridImage {
+    height: 210px;
+  }
+
+  .gridSecond {
+    margin-top: 10px;
+  }
+
+  #gridSecond {
+    grid-template-areas:
+      "a b"
+      "c c";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 48% 48%;
+  }
+
+  #gridSecond1 {
+    grid-area: a;
+  }
+
+  #gridSecond2 {
+    grid-area: b;
+  }
+
+  #gridSecond3 {
+    grid-area: c;
+  }
+
+  #gridThird {
+    grid-template-areas:
+      "a a"
+      "b b";
+    grid-template-rows: 15% 75%;
+    grid-template-columns: 97%;
+  }
+
+  #ads {
+    width: 100%;
+    grid-area: a;
+    flex-direction: row;
+  }
+
+  #ad1 {
+    width: 48%;
+    height: 100%;
+    margin-bottom: 0;
+    margin-right: 5px;
+  }
+
+  #ad2 {
+    width: 48%;
+    height: 100%;
+    margin-top: 0;
+    margin-left: 5px;
+  }
+
+  #content {
+    grid-area: b;
+  }
+
+  #bookDiv, .gridContent{
+    grid-template-rows: repeat(2, 200px);
+  }
+
+  #bottom{
+    width: 98%;
+    flex-direction: column;
+    font-size: 15px;
+  }
+
+  .bottomClassDiv{
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .footer{
+    margin-top: 50px;
+  }
+}

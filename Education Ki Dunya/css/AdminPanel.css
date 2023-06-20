@@ -1,0 +1,213 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    background-color: white;
+    width: 20%;
+    
+    /* border-right-style: solid; */
+    /* border-width: 2px; */
+    /* border-right-color: black; */
+}
+
+    #sidebar * {
+        color: black;
+    }
+
+    #sidebar > div {
+        display: flex;
+        justify-content: center;
+    }
+
+#text {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-panel-title{
+    margin: 0 auto;
+    color: red;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+#bookLink {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    background-color: #ddd;
+    border-end-start-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
+#books {
+    width: 100%;
+    height: 60px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#bookLink:active {
+    background-color: blue;
+}
+
+.hide-sidebar {
+    display: none;
+}
+
+.bar-max {
+    width: 100%;
+}
+
+section {
+    height: 100%;
+    width: 80%;
+    background-color: #eee;
+}
+
+    section i {
+        color: black;
+    }
+
+#bars {
+    padding-right: 10px;
+}
+
+#top-bar {
+    width: 100%;
+    background-color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-top: 20px;
+}
+
+article {
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+}
+
+#addBookDiv {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+}
+
+#addBookDiv > h2{
+    font-size: 25px;
+}
+
+    #addBookDiv * {
+        color: black;
+    }
+
+.btnAdd {
+    font-size: 25px;
+    padding: 5px;
+    background-color: black;
+    color: white!important;
+}
+
+#allBooks {
+    width: 99%;
+    margin-left: 5px;
+}
+
+
+li {
+    list-style: none;
+}
+
+li p{
+    color: black!important;
+}
+
+ul{
+    
+}
+
+.items{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    background: white;
+}
+
+.items img{
+    width: 100px;
+    height: 150px;
+}
+
+.bookname{
+    font-size: 25px;
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemImage {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button{
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    padding: 5px;
+}
+
+.buttons a {
+    text-decoration: none;
+    font-size: 25px;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+
+@media only screen and (max-width: 700px) {
+    #sidebar {
+        position: absolute;
+        height: 100vh;
+        width: 80%;
+        z-index: 10;
+    }
+
+    section {
+        width: 100%;
+    }
+}

@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="Education_Ki_Dunya.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education ki Dunia</title>
+    <link rel="stylesheet" href="./style.css" runat="server"/>
+
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    <div id="top">
+      <div>
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        <a href="Pages/Login.aspx" style="color: white"><i class="fa fa-user" aria-hidden="true"></i></a>
+      </div>
+    </div>
+
+    <div id="logo">
+      <img id="image" src="../pictures/education ki dunia logo.jpeg" alt="" />
+    </div>
+    <nav>
+      <ul class="menu menuHide">
+        <li><a href="../index.aspx">Home</a></li>
+        <li><a href="../../Pages/Poetry.aspx">Poetry</a></li>
+        <li><a href="../../Pages/About.aspx">About</a></li>
+        <li><a href="../../Pages/Contact.aspx">Contact Us</a></li>
+      </ul>
+      <div id="bar">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </div>
+    </nav>            
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+         <hr class="footer"/>
+    <footer>
+      <p>© Copyright EducationKiDunia</p>
+      <p>All Rights Reserved</p>
+    </footer>
+    
+    </form>
+</body>
+</html>

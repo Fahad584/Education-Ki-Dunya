@@ -1,0 +1,124 @@
+#intro{
+    width: 100%;
+    /* height: 200px; */
+    padding: 10px;
+    position: relative;
+}
+
+h1{
+    margin: 10px 0 20px 0;
+}
+
+p{
+    font-size: large;
+}
+
+section{
+    z-index: -1;
+}
+
+#poetry-box{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 400px 400px;
+    row-gap: 10px;
+    column-gap: 10px;
+    
+}
+
+.poetry-box2{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-columns: 400px 400px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+    border-style: solid;
+    flex-direction: column;
+    font-size: 28px;
+}
+
+.poetry-p{
+    font-size: 28px;
+}
+
+.box a{
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.poetry-main2{
+    margin-top: 40px;
+}
+
+.poetry-main2 h1{
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 1230px)
+{
+    #poetry-box{
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 300px 300px;
+    }
+
+    .poetry-box2{
+        grid-template-rows: 200px 200px 200px 200px;
+     grid-template-columns: 300px 300px;
+    }
+
+    .poetry-p, a{
+        font-size: 20px;
+    }
+}
+
+.poetry-main{
+    width: 98%;
+    background-color: #EAEFD3;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+/* #image{
+    width: 250px;
+    height: 100px;
+} */
+
+
+@media only screen and (max-width: 890px)
+{
+    #poetry-box{
+
+    grid-template-rows: 170px 170px 170px 170px;
+    grid-template-columns: 300px;
+    
+    }
+
+    .poetry-box2{
+        grid-template-rows: 170px 170px 170px 170px 170px 170px 170px 170px;
+        grid-template-columns: 300px;
+    }
+
+    .poetry-p, a{
+        font-size: 18px;
+    }
+
+    /* #intro{
+        width: 98%;
+    } */
+
+    section{
+        width: 92%;
+    }
+
+}
